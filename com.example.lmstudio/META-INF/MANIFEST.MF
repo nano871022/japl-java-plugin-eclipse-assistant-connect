@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Lmstudio
+Bundle-SymbolicName: com.example.lmstudio;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.example.lmstudio.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface,
+ org.json,
+ org.eclipse.ui.editors
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy

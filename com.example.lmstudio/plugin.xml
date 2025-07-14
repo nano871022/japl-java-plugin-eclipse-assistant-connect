@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="LM Studio"
+            id="com.example.lmstudio">
+      </category>
+      <view
+            name="LM Studio Chat"
+            icon="icons/sample.gif"
+            category="com.example.lmstudio"
+            class="com.example.lmstudio.views.ChatView"
+            id="com.example.lmstudio.views.ChatView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <menu
+               label="LM Studio">
+            <command
+                  commandId="com.example.lmstudio.commands.sendToChat"
+                  label="Send to LM Studio"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.example.lmstudio.commands.explainCode"
+                  label="Explain Code"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.example.lmstudio.commands.generateComments"
+                  label="Generate Comments"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.example.lmstudio.commands.generateTests"
+                  label="Generate Tests"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            name="Send to LM Studio"
+            id="com.example.lmstudio.commands.sendToChat">
+      </command>
+      <command
+            name="Explain Code"
+            id="com.example.lmstudio.commands.explainCode">
+      </command>
+      <command
+            name="Generate Comments"
+            id="com.example.lmstudio.commands.generateComments">
+      </command>
+      <command
+            name="Generate Tests"
+            id="com.example.lmstudio.commands.generateTests">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.example.lmstudio.handlers.SendToChatHandler"
+            commandId="com.example.lmstudio.commands.sendToChat">
+      </handler>
+      <handler
+            class="com.example.lmstudio.handlers.ExplainCodeHandler"
+            commandId="com.example.lmstudio.commands.explainCode">
+      </handler>
+      <handler
+            class="com.example.lmstudio.handlers.GenerateCommentsHandler"
+            commandId="com.example.lmstudio.commands.generateComments">
+      </handler>
+      <handler
+            class="com.example.lmstudio.handlers.GenerateTestsHandler"
+            commandId="com.example.lmstudio.commands.generateTests">
+      </handler>
+   </extension>
+
+</plugin>
