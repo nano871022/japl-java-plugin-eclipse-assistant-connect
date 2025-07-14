@@ -1,0 +1,7 @@
+/app/src/main/java/japl/java/plugin/eclipse/lm/Activator.java
+/app/src/main/java/japl/java/plugin/eclipse/lm/handlers/AbstractLMStudioHandler.java
+/app/src/main/java/japl/java/plugin/eclipse/lm/handlers/ExplainCodeHandler.java
+/app/src/main/java/japl/java/plugin/eclipse/lm/handlers/GenerateCommentsHandler.java
+/app/src/main/java/japl/java/plugin/eclipse/lm/handlers/GenerateTestsHandler.java
+/app/src/main/java/japl/java/plugin/eclipse/lm/handlers/SendToChatHandler.java
+/app/src/main/java/japl/java/plugin/eclipse/lm/views/ChatView.java
