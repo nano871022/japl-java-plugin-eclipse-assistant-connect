@@ -12,38 +12,6 @@
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
-    <dependencies>
-		<dependency>
-    		<groupId>org.eclipse.platform</groupId>
-    		<artifactId>org.eclipse.ui</artifactId>
-    		<version>3.207.0</version>
-		</dependency>
-        <dependency>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.core.runtime</artifactId>
-            <version>3.32.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.jface</artifactId>
-            <version>3.35.100</version>
-        </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20240303</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.ui.editors</artifactId>
-            <version>3.19.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.platform</groupId>
-            <artifactId>org.eclipse.swt.gtk.linux.x86_64</artifactId>
-            <version>3.124.0</version>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
@@ -59,29 +27,5 @@
         </plugins>
     </build>
     
-     <repositories>
-        <repository>
-            <id>maven-central</id>
-            <name>Central Repository</name>
-            <url>https://repo.maven.apache.org/maven2</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>eclipse-repo</id>
-            <name>Eclipse Repository</name>
-            <url>https://repo.eclipse.org/content/repositories/releases/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
 </project>
