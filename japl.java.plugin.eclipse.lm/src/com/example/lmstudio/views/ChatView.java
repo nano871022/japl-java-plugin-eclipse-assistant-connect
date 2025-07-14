@@ -1,4 +1,4 @@
-package com.example.lmstudio.views;
+package japl.java.plugin.eclipse.lm.views;
 
 import java.io.IOException;
 import java.net.URI;

@@ -1,4 +1,4 @@
-package com.example.lmstudio.handlers;
+package japl.java.plugin.eclipse.lm.handlers;
 
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
@@ -12,7 +12,9 @@ import org.eclipse.ui.handlers.HandlerUtil;
 
 import com.example.lmstudio.views.ChatView;
 
-public class SendToChatHandler extends AbstractHandler {
+public abstract class AbstractLMStudioHandler extends AbstractHandler {
+
+	protected abstract String getPrompt(String selectedText);
 
 	@Override
 	public Object execute(ExecutionEvent event) throws ExecutionException {
@@ -28,7 +30,7 @@ public class SendToChatHandler extends AbstractHandler {
 				if (!selectedText.isEmpty()) {
 					try {
 						ChatView chatView = (ChatView) page.showView(ChatView.ID);
-						chatView.sendMessage(selectedText);
+						chatView.sendMessage(getPrompt(selectedText));
 					} catch (Exception e) {
 						e.printStackTrace();
 					}

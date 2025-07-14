@@ -1,4 +1,4 @@
-package com.example.lmstudio;
+package japl.java.plugin.eclipse.lm;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;

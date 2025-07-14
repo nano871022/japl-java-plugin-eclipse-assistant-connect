@@ -1,4 +1,4 @@
-package com.example.lmstudio.handlers;
+package japl.java.plugin.eclipse.lm.handlers;
 
 public class ExplainCodeHandler extends AbstractLMStudioHandler {
 

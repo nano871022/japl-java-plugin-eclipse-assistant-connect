@@ -6,14 +6,14 @@
          point="org.eclipse.ui.views">
       <category
             name="LM Studio"
-            id="com.example.lmstudio">
+            id="japl.java.plugin.eclipse.lm">
       </category>
       <view
             name="LM Studio Chat"
             icon="icons/sample.gif"
-            category="com.example.lmstudio"
-            class="com.example.lmstudio.views.ChatView"
-            id="com.example.lmstudio.views.ChatView">
+            category="japl.java.plugin.eclipse.lm"
+            class="japl.java.plugin.eclipse.lm.views.ChatView"
+            id="japl.java.plugin.eclipse.lm.views.ChatView">
       </view>
    </extension>
    <extension
@@ -23,22 +23,22 @@
          <menu
                label="LM Studio">
             <command
-                  commandId="com.example.lmstudio.commands.sendToChat"
+                  commandId="japl.java.plugin.eclipse.lm.commands.sendToChat"
                   label="Send to LM Studio"
                   style="push">
             </command>
             <command
-                  commandId="com.example.lmstudio.commands.explainCode"
+                  commandId="japl.java.plugin.eclipse.lm.commands.explainCode"
                   label="Explain Code"
                   style="push">
             </command>
             <command
-                  commandId="com.example.lmstudio.commands.generateComments"
+                  commandId="japl.java.plugin.eclipse.lm.commands.generateComments"
                   label="Generate Comments"
                   style="push">
             </command>
             <command
-                  commandId="com.example.lmstudio.commands.generateTests"
+                  commandId="japl.java.plugin.eclipse.lm.commands.generateTests"
                   label="Generate Tests"
                   style="push">
             </command>
@@ -49,38 +49,38 @@
          point="org.eclipse.ui.commands">
       <command
             name="Send to LM Studio"
-            id="com.example.lmstudio.commands.sendToChat">
+            id="japl.java.plugin.eclipse.lm.commands.sendToChat">
       </command>
       <command
             name="Explain Code"
-            id="com.example.lmstudio.commands.explainCode">
+            id="japl.java.plugin.eclipse.lm.commands.explainCode">
       </command>
       <command
             name="Generate Comments"
-            id="com.example.lmstudio.commands.generateComments">
+            id="japl.java.plugin.eclipse.lm.commands.generateComments">
       </command>
       <command
             name="Generate Tests"
-            id="com.example.lmstudio.commands.generateTests">
+            id="japl.java.plugin.eclipse.lm.commands.generateTests">
       </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
-            class="com.example.lmstudio.handlers.SendToChatHandler"
-            commandId="com.example.lmstudio.commands.sendToChat">
+            class="japl.java.plugin.eclipse.lm.handlers.SendToChatHandler"
+            commandId="japl.java.plugin.eclipse.lm.commands.sendToChat">
       </handler>
       <handler
-            class="com.example.lmstudio.handlers.ExplainCodeHandler"
-            commandId="com.example.lmstudio.commands.explainCode">
+            class="japl.java.plugin.eclipse.lm.handlers.ExplainCodeHandler"
+            commandId="japl.java.plugin.eclipse.lm.commands.explainCode">
       </handler>
       <handler
-            class="com.example.lmstudio.handlers.GenerateCommentsHandler"
-            commandId="com.example.lmstudio.commands.generateComments">
+            class="japl.java.plugin.eclipse.lm.handlers.GenerateCommentsHandler"
+            commandId="japl.java.plugin.eclipse.lm.commands.generateComments">
       </handler>
       <handler
-            class="com.example.lmstudio.handlers.GenerateTestsHandler"
-            commandId="com.example.lmstudio.commands.generateTests">
+            class="japl.java.plugin.eclipse.lm.handlers.GenerateTestsHandler"
+            commandId="japl.java.plugin.eclipse.lm.commands.generateTests">
       </handler>
    </extension>
 
