@@ -17,11 +17,15 @@ import org.eclipse.swt.widgets.Text;
 import org.eclipse.jface.action.Action;
 import org.eclipse.jface.action.IMenuManager;
 import org.eclipse.jface.action.IToolBarManager;
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.ui.IActionBars;
 import org.eclipse.ui.part.ViewPart;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class ChatView extends ViewPart {
 
+	public static final String ID = "japl.java.plugin.eclipse.lm.views.ChatView";
 	private Text conversation;
 	private Text message;
 	private Action explainCodeAction;

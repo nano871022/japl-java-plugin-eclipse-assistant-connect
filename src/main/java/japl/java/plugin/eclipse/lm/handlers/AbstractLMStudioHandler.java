@@ -10,7 +10,7 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
 
-import com.example.lmstudio.views.ChatView;
+import japl.java.plugin.eclipse.lm.views.ChatView;
 
 public abstract class AbstractLMStudioHandler extends AbstractHandler {
 

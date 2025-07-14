@@ -1,0 +1,11 @@
+japl/java/plugin/eclipse/lm/views/ChatView$1.class
+japl/java/plugin/eclipse/lm/views/ChatView.class
+japl/java/plugin/eclipse/lm/views/ChatView$4.class
+japl/java/plugin/eclipse/lm/handlers/GenerateCommentsHandler.class
+japl/java/plugin/eclipse/lm/views/ChatView$2.class
+japl/java/plugin/eclipse/lm/handlers/AbstractLMStudioHandler.class
+japl/java/plugin/eclipse/lm/views/ChatView$3.class
+japl/java/plugin/eclipse/lm/handlers/ExplainCodeHandler.class
+japl/java/plugin/eclipse/lm/handlers/SendToChatHandler.class
+japl/java/plugin/eclipse/lm/handlers/GenerateTestsHandler.class
+japl/java/plugin/eclipse/lm/Activator.class
